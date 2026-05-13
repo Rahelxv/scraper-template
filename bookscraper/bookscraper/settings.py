@@ -12,6 +12,9 @@ BOT_NAME = "bookscraper"
 SPIDER_MODULES = ["bookscraper.spiders"]
 NEWSPIDER_MODULE = "bookscraper.spiders"
 
+#untuk menentukan format file, jadi ga perlu pakai -O something.format langsung crawl dan nama spider aja
+FEEDS = {'booksdata.json' : {'format': 'json'}}
+
 ADDONS = {}
 
 
